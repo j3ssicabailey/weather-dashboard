@@ -1,0 +1,46 @@
+.weather-details {
+  flex: 1;
+  margin-left: 2rem;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.detail-item {
+  display: flex;
+  flex-direction: column;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  padding: 0.75rem;
+  transition: transform 0.2s;
+}
+
+.detail-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.detail-label {
+  font-size: 0.875rem;
+  color: #666;
+  margin-bottom: 0.25rem;
+}
+
+.detail-value {
+  font-size: 1.125rem;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .weather-details {
+    margin-left: 0;
+    width: 100%;
+  }
+
+  .details-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}

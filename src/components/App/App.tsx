@@ -3,7 +3,7 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import Forecast from '../Forecast/Forecast';
-import { WeatherProvider } from '../../context/WeatherContext';
+import { WeatherProvider } from '../../context/WeatherProvider';
 
 const App: React.FC = () => {
     return (

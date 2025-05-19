@@ -1,0 +1,102 @@
+.current-weather {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+
+.current-weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.location-info h2 {
+  font-size: 1.8rem;
+  margin-bottom: 0.25rem;
+}
+
+.location-info p {
+  color: #666;
+  font-size: 1rem;
+}
+
+.current-date {
+  color: #666;
+  font-size: 1rem;
+}
+
+.current-weather-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.temperature-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-icon {
+  width: 80px;
+  height: 80px;
+  margin-bottom: 0.5rem;
+}
+
+.temperature {
+  display: flex;
+  align-items: baseline;
+}
+
+.temperature-value {
+  font-size: 4rem;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.temperature-unit {
+  font-size: 1.5rem;
+  margin-left: 0.25rem;
+}
+
+.weather-condition {
+  font-size: 1.25rem;
+  margin-top: 0.5rem;
+  text-align: center;
+}
+
+.loading,
+.error,
+.no-data {
+  padding: 2rem;
+  text-align: center;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  color: #3498db;
+}
+
+.error {
+  color: #e74c3c;
+}
+
+.no-data {
+  color: #7f8c8d;
+}
+
+@media (max-width: 768px) {
+  .current-weather-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+
+  .current-weather-content {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
