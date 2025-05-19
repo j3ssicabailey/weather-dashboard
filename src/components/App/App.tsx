@@ -3,6 +3,7 @@ import './App.css';
 import SearchBar from '../SearchBar/SearchBar';
 import CurrentWeather from '../CurrentWeather/CurrentWeather';
 import Forecast from '../Forecast/Forecast';
+import WeatherMap from '../WeatherMap/WeatherMap';
 import { WeatherProvider } from '../../context/WeatherProvider';
 
 const App: React.FC = () => {
@@ -16,6 +17,7 @@ const App: React.FC = () => {
                 <SearchBar />
                 <CurrentWeather />
                 <Forecast />
+                <WeatherMap />
             </main>
             <footer className="app-footer">
                 <p>Weather Dashboard &copy; {new Date().getFullYear()}</p>

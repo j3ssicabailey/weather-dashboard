@@ -11,8 +11,8 @@ const WeatherCard: React.FC<WeatherCardProps> = ({ dayData }) => {
         const date = new Date(dateStr);
         return date.toLocaleDateString('en-US', {
         weekday: 'short',
-        month: 'short',
         day: 'numeric',
+        month: 'short',
         });
     };
 
