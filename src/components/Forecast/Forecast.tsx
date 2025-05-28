@@ -7,11 +7,11 @@ const Forecast: React.FC = () => {
     const { forecastData, loading, error } = useWeather();
 
     if (loading) {
-        return null; // Already handled by CurrentWeather component
+        return null; 
     }
 
     if (error) {
-        return null; // Already handled by CurrentWeather component
+        return null; 
     }
 
     if (!forecastData) {
